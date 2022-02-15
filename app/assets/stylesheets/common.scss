@@ -1,0 +1,46 @@
+header , footer {
+  color: white;
+  background-color: #FFCC33;
+  padding: 15px 0 15px 20px;
+} 
+
+table th {
+  background-color: #FFFF99;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #FFFFCC;
+  padding: 10px 20px;
+}
+
+.check_box {
+  text-align: center;
+}
+
+.title-form {
+  width: 350px;
+  height: 50px;
+}
+
+.memo-form {
+  width: 350px;
+  height: 200px;
+}
+
+.mark {
+  text-align: center;
+}
+
+.redirects {
+  list-style: none;
+}
+
+.notice {
+  background-color: #FFCCCC;
+  padding: 5px;
+}
+
+.error_message {
+  background-color: #FFCCCC;
+}
