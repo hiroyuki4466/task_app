@@ -1,0 +1,35 @@
+<h3>スケジュール詳細</h3>
+
+<table>
+  <tr>
+    <th>タイトル</th>
+    <td class = "title-form"><%= @user.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @user.start %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @user.end %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><% if @user.allday == true %> 
+          <%= "○" %>
+        <% end %>
+    </td>
+  </tr>
+  <tr>
+    <th>メモ</th>
+    <td class = "memo-form"><%= @user.memo %></td>
+  </tr>
+</table>
+
+<div>
+   <ul class ="redirects">
+    <li><%= link_to "スケジュール一覧に戻る", :users %></li>
+    <li><%= link_to "スケジュールを編集する", [:edit, @user] %></li>
+    <li><%= link_to "スケジュールを削除する", @user, method: :delete, data: { confirm: "本当に削除しますか？" } %></li>
+   </ul>
+</div> 
